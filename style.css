@@ -1,0 +1,140 @@
+body {
+    font-family: 'Sono', sans-serif;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .pricing-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+
+  .pricing-plan {
+    flex: 1;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 400px;
+    height: 400px;
+    box-shadow: 5px 5px 10px gray;
+  }
+
+  .plan-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, orange, pink, greenyellow);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .plan-price {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .plan-features {
+    border-bottom: 1px solid gray;
+    box-shadow: 1px 5px 12px -8px gray;
+    border-radius: 30px;
+  }
+
+  .plan-features li {
+    list-style: none;
+    font-size: 20px;
+    margin: 30px 0;
+    transition: all 0.1s linear;
+  }
+
+  .plan-features li:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+  }
+
+  .plan-button a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .plan-button {
+    margin-top: 30px;
+    margin-left: 170px;
+    background-color: #ff6600;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.1s;
+  }
+
+  .plan-button:hover {
+    color: #fff;
+    background-color: black;
+    box-shadow: 0px 1px 10px black, 1px -1px 10px black;
+    transform: scale(1.05);
+    text-shadow: 0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #fff,
+      0 0 80px #fff;
+  }
+
+  @media (max-width: 1350px) {
+    .pricing-container {
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .pricing-plan {
+      background-color: black;
+      color: white;
+    }
+
+    .plan-button {
+      background-color: palevioletred;
+      margin: 0 120px;
+      padding: 20px;
+
+    }
+
+    .plan-button:hover {
+      color: #ffa3fd;
+      background-color: #191825;
+      box-shadow: inset 0px 1px 5px #865dff, inset 1px -1px 5px #865dff;
+      transform: translateY(-3px);
+      text-shadow: 0 0 10px #ffa3fd,
+        0 0 20px #ffa3fd,
+        0 0 40px #ffa3fd,
+        0 0 80px #ffa3fd,
+        0 0 120px #ffa3fd,
+        0 0 160px #ffa3fd;
+    }
+
+    .plan-title {
+      background: palevioletred;
+    }
+
+    body {
+      background: linear-gradient(to right, palevioletred, yellow);
+    }
+}
+  /* .left{
+      align-self: flex-start;
+    }
+    .right{
+     align-self: flex-end;
+     TRY THI SONCE AND SEETHE EFFFECT:)
+    } */
